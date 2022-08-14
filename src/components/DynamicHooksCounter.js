@@ -3,7 +3,7 @@ import { decrementCounter, incrementCounter } from '../redux/dynamicCounter/acti
 
 function DynamicHooksCounter() {
 
-    const count = useSelector((state) => state.value)
+    const count = useSelector((state) => state.dynamicCounter.value)
     const dispatch = useDispatch()
 
     const incrementHandler = (value) => {
